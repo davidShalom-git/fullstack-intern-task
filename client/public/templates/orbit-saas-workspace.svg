@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title description">
+  <title id="title">Orbit SaaS workspace dashboard preview</title>
+  <desc id="description">A SaaS project workspace with navigation, usage cards, a progress chart, and a project table.</desc>
+  <defs>
+    <linearGradient id="chart" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#86bba2" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#86bba2" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="#f3f6f3"/>
+  <rect width="238" height="760" fill="#18362f"/>
+  <circle cx="43" cy="43" r="18" fill="#b6d6c5"/>
+  <path d="M36 44h14M43 37v14" stroke="#18362f" stroke-width="3" stroke-linecap="round"/>
+  <text x="73" y="50" fill="#fff" font-family="Arial,sans-serif" font-size="23" font-weight="700">orbit</text>
+  <text x="28" y="113" fill="#8eaaa0" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">WORKSPACE</text>
+  <rect x="16" y="132" width="206" height="46" rx="9" fill="#2b5147"/>
+  <rect x="33" y="148" width="14" height="13" rx="3" fill="#b6d6c5"/>
+  <text x="60" y="160" fill="#fff" font-family="Arial,sans-serif" font-size="15" font-weight="600">Overview</text>
+  <g fill="none" stroke="#93aaa1" stroke-width="2" stroke-linecap="round">
+    <rect x="34" y="201" width="13" height="13" rx="3"/><path d="M61 208h91"/>
+    <circle cx="41" cy="254" r="7"/><path d="M61 254h83"/>
+    <path d="M34 294h14v14H34zM61 301h101"/>
+    <circle cx="41" cy="347" r="7"/><path d="M61 347h74"/>
+  </g>
+  <g fill="#d5e2dc" font-family="Arial,sans-serif" font-size="14">
+    <text x="60" y="214">Projects</text><text x="60" y="259">Team</text>
+    <text x="60" y="306">Reports</text><text x="60" y="352">Settings</text>
+  </g>
+  <line x1="24" y1="690" x2="214" y2="690" stroke="#3b5b51"/>
+  <circle cx="48" cy="722" r="16" fill="#d7b6a0"/>
+  <text x="76" y="719" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="600">Maya Chen</text>
+  <text x="76" y="737" fill="#9bb1a8" font-family="Arial,sans-serif" font-size="11">Free workspace</text>
+
+  <rect x="238" width="962" height="72" fill="#fff"/>
+  <line x1="238" y1="72" x2="1200" y2="72" stroke="#e2e8e3"/>
+  <text x="275" y="44" fill="#83938b" font-family="Arial,sans-serif" font-size="13">Workspace</text>
+  <text x="350" y="44" fill="#b0bbb5" font-family="Arial,sans-serif" font-size="13">/</text>
+  <text x="367" y="44" fill="#243c33" font-family="Arial,sans-serif" font-size="13" font-weight="600">Overview</text>
+  <rect x="1002" y="17" width="132" height="38" rx="8" fill="#e7f0e9"/>
+  <circle cx="1023" cy="36" r="5" fill="#3d9270"/>
+  <text x="1036" y="40" fill="#326e57" font-family="Arial,sans-serif" font-size="12" font-weight="600">All systems</text>
+
+  <text x="278" y="124" fill="#223b32" font-family="Arial,sans-serif" font-size="25" font-weight="700">Good afternoon, Maya</text>
+  <text x="278" y="151" fill="#87958e" font-family="Arial,sans-serif" font-size="13">Here is what is happening with your projects today.</text>
+  <rect x="1050" y="105" width="112" height="38" rx="8" fill="#286b53"/>
+  <text x="1072" y="129" fill="#fff" font-family="Arial,sans-serif" font-size="12" font-weight="600">+ New project</text>
+
+  <g>
+    <rect x="278" y="178" width="270" height="116" rx="11" fill="#fff" stroke="#e4eae5"/>
+    <rect x="568" y="178" width="270" height="116" rx="11" fill="#fff" stroke="#e4eae5"/>
+    <rect x="858" y="178" width="304" height="116" rx="11" fill="#fff" stroke="#e4eae5"/>
+    <text x="300" y="208" fill="#7c8c84" font-family="Arial,sans-serif" font-size="12">Active projects</text>
+    <text x="300" y="255" fill="#243d33" font-family="Arial,sans-serif" font-size="31" font-weight="700">12</text>
+    <text x="345" y="254" fill="#378362" font-family="Arial,sans-serif" font-size="12">+2 this month</text>
+    <text x="590" y="208" fill="#7c8c84" font-family="Arial,sans-serif" font-size="12">Tasks completed</text>
+    <text x="590" y="255" fill="#243d33" font-family="Arial,sans-serif" font-size="31" font-weight="700">84</text>
+    <text x="636" y="254" fill="#378362" font-family="Arial,sans-serif" font-size="12">+12 this week</text>
+    <text x="880" y="208" fill="#7c8c84" font-family="Arial,sans-serif" font-size="12">Workspace usage</text>
+    <text x="880" y="255" fill="#243d33" font-family="Arial,sans-serif" font-size="31" font-weight="700">68%</text>
+    <rect x="963" y="243" width="168" height="8" rx="4" fill="#e8eee9"/>
+    <rect x="963" y="243" width="114" height="8" rx="4" fill="#5b9b7a"/>
+  </g>
+
+  <rect x="278" y="314" width="560" height="252" rx="11" fill="#fff" stroke="#e4eae5"/>
+  <text x="300" y="346" fill="#263d34" font-family="Arial,sans-serif" font-size="14" font-weight="700">Project activity</text>
+  <text x="300" y="367" fill="#8b9992" font-family="Arial,sans-serif" font-size="11">Tasks completed over the last 7 days</text>
+  <g stroke="#edf0ed" stroke-width="1">
+    <line x1="316" y1="405" x2="810" y2="405"/><line x1="316" y1="446" x2="810" y2="446"/>
+    <line x1="316" y1="487" x2="810" y2="487"/><line x1="316" y1="528" x2="810" y2="528"/>
+  </g>
+  <path d="M324 501L395 475L465 488L536 440L607 455L678 414L749 429L810 393L810 528L324 528Z" fill="url(#chart)"/>
+  <path d="M324 501L395 475L465 488L536 440L607 455L678 414L749 429L810 393" fill="none" stroke="#428567" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#428567"><circle cx="324" cy="501" r="4"/><circle cx="395" cy="475" r="4"/><circle cx="465" cy="488" r="4"/><circle cx="536" cy="440" r="4"/><circle cx="607" cy="455" r="4"/><circle cx="678" cy="414" r="4"/><circle cx="749" cy="429" r="4"/><circle cx="810" cy="393" r="4"/></g>
+  <g fill="#98a49d" font-family="Arial,sans-serif" font-size="10"><text x="320" y="548">Mon</text><text x="391" y="548">Tue</text><text x="461" y="548">Wed</text><text x="532" y="548">Thu</text><text x="603" y="548">Fri</text><text x="674" y="548">Sat</text><text x="745" y="548">Sun</text></g>
+
+  <rect x="858" y="314" width="304" height="252" rx="11" fill="#fff" stroke="#e4eae5"/>
+  <text x="880" y="346" fill="#263d34" font-family="Arial,sans-serif" font-size="14" font-weight="700">Recent activity</text>
+  <g font-family="Arial,sans-serif">
+    <circle cx="891" cy="388" r="14" fill="#e6f1e9"/><text x="886" y="392" fill="#438365" font-size="10" font-weight="700">MC</text>
+    <text x="916" y="385" fill="#3c4d44" font-size="11" font-weight="600">Maya updated the</text><text x="916" y="401" fill="#3c4d44" font-size="11">launch checklist</text><text x="916" y="418" fill="#9aa69f" font-size="10">12 minutes ago</text>
+    <line x1="880" y1="434" x2="1140" y2="434" stroke="#edf0ed"/>
+    <circle cx="891" cy="461" r="14" fill="#f3e9df"/><text x="886" y="465" fill="#9a6d4f" font-size="10" font-weight="700">JL</text>
+    <text x="916" y="458" fill="#3c4d44" font-size="11" font-weight="600">Jordan joined</text><text x="916" y="474" fill="#3c4d44" font-size="11">Mobile redesign</text><text x="916" y="491" fill="#9aa69f" font-size="10">1 hour ago</text>
+    <line x1="880" y1="507" x2="1140" y2="507" stroke="#edf0ed"/>
+    <text x="880" y="536" fill="#438365" font-size="11" font-weight="600">View activity</text>
+  </g>
+
+  <rect x="278" y="585" width="884" height="143" rx="11" fill="#fff" stroke="#e4eae5"/>
+  <text x="300" y="615" fill="#263d34" font-family="Arial,sans-serif" font-size="14" font-weight="700">Your projects</text>
+  <g fill="#91a097" font-family="Arial,sans-serif" font-size="10" font-weight="600">
+    <text x="302" y="646">PROJECT</text><text x="659" y="646">STATUS</text><text x="835" y="646">UPDATED</text><text x="1038" y="646">PROGRESS</text>
+  </g>
+  <line x1="298" y1="657" x2="1142" y2="657" stroke="#edf0ed"/>
+  <circle cx="312" cy="682" r="10" fill="#e6efe8"/><text x="332" y="686" fill="#3b4c43" font-family="Arial,sans-serif" font-size="11" font-weight="600">Website refresh</text>
+  <rect x="647" y="670" width="88" height="22" rx="11" fill="#edf5ef"/><text x="663" y="685" fill="#478162" font-family="Arial,sans-serif" font-size="10">In progress</text>
+  <text x="835" y="685" fill="#7c8b83" font-family="Arial,sans-serif" font-size="10">Today</text>
+  <rect x="1038" y="676" width="92" height="7" rx="4" fill="#e8eee9"/><rect x="1038" y="676" width="60" height="7" rx="4" fill="#5b9b7a"/>
+</svg>

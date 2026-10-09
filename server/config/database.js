@@ -52,6 +52,13 @@ const starterTemplates = [
       "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1200&q=85",
     category: "Events",
   },
+  {
+    name: "Orbit SaaS Workspace",
+    description:
+      "A product dashboard for tracking projects, team activity, and account usage.",
+    thumbnail_url: "/templates/orbit-saas-workspace.svg",
+    category: "SaaS",
+  },
 ];
 
 async function connectDatabase() {
@@ -62,10 +69,15 @@ async function connectDatabase() {
 }
 
 async function seedTemplates() {
-  if ((await Template.countDocuments()) === 0) {
-    await Template.insertMany(starterTemplates);
-    console.log(`Added ${starterTemplates.length} sample templates.`);
-  }
+  const existingNames = new Set(await Template.distinct("name"));
+  const missingTemplates = starterTemplates.filter(
+    (template) => !existingNames.has(template.name),
+  );
+
+  if (missingTemplates.length === 0) return;
+
+  await Template.insertMany(missingTemplates);
+  console.log(`Added ${missingTemplates.length} sample template(s).`);
 }
 
 async function resetDatabase() {

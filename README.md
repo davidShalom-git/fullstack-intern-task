@@ -10,12 +10,13 @@ Forma is a full-stack template store built for the Gnxtace Technologies Software
 - **Assessment write-up:** [Software Engineering Intern Assessment](output/pdf/Software-Engineering-Intern-Assessment-David-Shalom-M.pdf)
 - **Candidate:** David Shalom M · davidshalomswe@gmail.com · 7539943015
 
-The React frontend and Express API are deployed as separate Vercel projects. The hosted API connects to MongoDB Atlas. The first successful database connection seeds six sample templates when the collection is empty.
+The React frontend and Express API are deployed as separate Vercel projects. The hosted API connects to MongoDB Atlas. The API ensures seven starter templates are available without replacing templates that are already in the database, including a custom SaaS dashboard preview.
 
 ## What it does
 
 - Creates accounts and signs users in with hashed passwords and JWT authentication.
 - Shows a responsive template gallery with search and category filters.
+- Includes a SaaS workspace example with a purpose-made dashboard interface preview.
 - Lets signed-in users add and remove favorites and view their saved list.
 - Validates incoming data and returns clear HTTP status codes and JSON errors.
 - Prevents duplicate favorites with a unique database index for each user/template pair.
