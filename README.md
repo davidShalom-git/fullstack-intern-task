@@ -33,6 +33,10 @@ A small full-stack template gallery built for the Gnxtace Technologies Software 
 
 The project has separate `client` and `server` applications. Install the packages in both folders, then create `server/.env` using `server/.env.example` as a guide. Set `JWT_SECRET` to a private value with at least 24 characters, and set `MONGODB_URI` to your local MongoDB or Atlas connection. Start MongoDB, then start the `dev` script for each app in separate terminals. The API runs on port `4000`; open the local address shown by Vite for the website. The server seeds six sample templates when the collection is empty.
 
+## Vercel deployment
+
+The frontend and API can be deployed as two Vercel projects from this repository. Set the frontend project's root directory to `client` and its `VITE_API_URL` environment variable to the deployed API URL ending in `/api`. Set the API project's root directory to `server`, then add `MONGODB_URI`, `JWT_SECRET` (at least 24 characters), and `CLIENT_URL` (the deployed frontend URL) as environment variables. Use a MongoDB Atlas database reachable by the hosted API; a local MongoDB address only works on your computer. The client rewrite keeps React Router pages working when opened directly.
+
 ## API routes
 
 All routes are prefixed with `/api`.
@@ -60,7 +64,8 @@ client/                     React application
   src/Components/           Navigation, gallery, favorites, and reusable cards
   src/config/api.js          Shared Axios setup
 server/                     Express API (CommonJS)
-  Server.js                 Middleware, route mounting, and server startup
+  index.js                  Vercel entry point and local server startup
+  Server.js                 Middleware, route mounting, and database startup
   config/                    MongoDB connection, JWT middleware, and reset utility
   models/                    Mongoose User, Template, and Favorite models
   router/                    Authentication, template, and favorite endpoints
