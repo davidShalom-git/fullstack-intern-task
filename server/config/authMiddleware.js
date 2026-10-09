@@ -1,0 +1,21 @@
+const jwt = require("jsonwebtoken");
+
+function requireAuth(req, res, next) {
+  const authorization = req.get("authorization") || "";
+  const [scheme, token] = authorization.split(" ");
+
+  if (scheme !== "Bearer" || !token) {
+    return res.status(401).json({ message: "Please log in to continue." });
+  }
+
+  try {
+    req.user = jwt.verify(token, process.env.JWT_SECRET);
+    return next();
+  } catch {
+    return res
+      .status(401)
+      .json({ message: "Your session has expired. Please log in again." });
+  }
+}
+
+module.exports = requireAuth;
