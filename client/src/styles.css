@@ -428,6 +428,10 @@ main {
   object-fit: cover;
   transition: transform 0.5s;
 }
+.card-image-dashboard {
+  object-fit: contain;
+  background: #f3f6f3;
+}
 .template-card:hover .card-image {
   transform: scale(1.035);
 }

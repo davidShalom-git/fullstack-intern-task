@@ -9,7 +9,11 @@ export default function TemplateCard({
     <article className="template-card">
       <div className="card-image-wrap">
         <img
-          className="card-image"
+          className={
+            template.category === "SaaS"
+              ? "card-image card-image-dashboard"
+              : "card-image"
+          }
           src={template.thumbnail_url}
           alt={`${template.name} template preview`}
           loading="lazy"
