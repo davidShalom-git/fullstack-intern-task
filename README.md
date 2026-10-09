@@ -31,7 +31,7 @@ A small full-stack template gallery built for the Gnxtace Technologies Software 
 
 ## Run locally
 
-The project uses separate `client` and `server` applications. Install their dependencies, configure the server with the values in `server/.env.example`, and start MongoDB before launching both applications. The API connects to MongoDB and adds six sample templates when the collection is empty. The website is available at the local address shown by Vite.
+The project has separate `client` and `server` applications. Install the packages in both folders, then create `server/.env` using `server/.env.example` as a guide. Set `JWT_SECRET` to a private value with at least 24 characters, and set `MONGODB_URI` to your local MongoDB or Atlas connection. Start MongoDB, then launch the server and client development scripts in separate terminals. The API runs on port `4000`; open the local address shown by Vite for the website. The server seeds six sample templates when the collection is empty.
 
 ## API routes
 
@@ -55,7 +55,7 @@ For protected routes, send `Authorization: Bearer <token>`. Successful API respo
 
 ```text
 client/                     React application
-  src/App.jsx               Page routes and shared authentication provider
+  src/App.jsx               Page routes
   src/Auth/                 Sign-in, sign-up, and Zustand auth store
   src/Components/           Navigation, gallery, favorites, and reusable cards
   src/config/api.js          Shared Axios setup
@@ -69,8 +69,8 @@ server/                     Express API (CommonJS)
 ## Notes
 
 - MongoDB stores three collections: `users`, `templates`, and `favorites`.
-- Copy `.env.example` to `.env` for local configuration. Do not commit `.env` or real secrets.
-- The assessment asks for a public GitHub repository named `fullstack-intern-task`, with both `client/` and `server/` folders. Create the repository and push this project when you are ready; review this README and fill in the candidate details first.
+- Use `server/.env.example` to create the local `server/.env` configuration. Do not commit `.env` files or real secrets.
+- The public assessment repository is [fullstack-intern-task](https://github.com/davidShalom-git/fullstack-intern-task). It contains both the `client/` and `server/` folders.
 - The assessment email gives a deadline of **11 October 2026 before 6 pm**. Its attachment separately describes the task as a 48-hour assessment.
 
 ## Design decisions to explain

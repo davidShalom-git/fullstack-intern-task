@@ -1,6 +1,7 @@
 import { ArrowUpRight, Heart } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useAuthStore } from "../Auth/AuthStore.js";
 import { api, getErrorMessage } from "../config/api.js";
 import TemplateCard from "./TemplateCard.jsx";
 
@@ -8,14 +9,21 @@ export default function TemplateFavorites() {
   const [templates, setTemplates] = useState([]);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
+  const signOut = useAuthStore((state) => state.signOut);
 
   useEffect(() => {
     api
       .get("/favorites")
       .then(({ data }) => setTemplates(data.templates))
-      .catch((requestError) => setError(getErrorMessage(requestError)))
+      .catch((requestError) => {
+        if (requestError.response?.status === 401) {
+          signOut();
+          return;
+        }
+        setError(getErrorMessage(requestError));
+      })
       .finally(() => setLoading(false));
-  }, []);
+  }, [signOut]);
 
   async function removeFavorite(template) {
     try {
