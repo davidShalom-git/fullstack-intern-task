@@ -31,7 +31,7 @@ A small full-stack template gallery built for the Gnxtace Technologies Software 
 
 ## Run locally
 
-The project has separate `client` and `server` applications. Install the packages in both folders, then create `server/.env` using `server/.env.example` as a guide. Set `JWT_SECRET` to a private value with at least 24 characters, and set `MONGODB_URI` to your local MongoDB or Atlas connection. Start MongoDB, then launch the server and client development scripts in separate terminals. The API runs on port `4000`; open the local address shown by Vite for the website. The server seeds six sample templates when the collection is empty.
+The project has separate `client` and `server` applications. Install the packages in both folders, then create `server/.env` using `server/.env.example` as a guide. Set `JWT_SECRET` to a private value with at least 24 characters, and set `MONGODB_URI` to your local MongoDB or Atlas connection. Start MongoDB, then start the `dev` script for each app in separate terminals. The API runs on port `4000`; open the local address shown by Vite for the website. The server seeds six sample templates when the collection is empty.
 
 ## API routes
 
