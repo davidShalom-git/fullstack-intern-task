@@ -11,12 +11,15 @@ export default function TemplateCatalog() {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All categories");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(true);
   const token = useAuthStore((state) => state.token);
   const signOut = useAuthStore((state) => state.signOut);
   const navigate = useNavigate();
 
   useEffect(() => {
     async function loadTemplates() {
+      setLoading(true);
+      setError("");
       try {
         const { data } = await api.get("/templates");
         setTemplates(data.templates);
@@ -32,6 +35,8 @@ export default function TemplateCatalog() {
         } else setFavorites([]);
       } catch (requestError) {
         setError(getErrorMessage(requestError));
+      } finally {
+        setLoading(false);
       }
     }
     loadTemplates();
@@ -164,7 +169,11 @@ export default function TemplateCatalog() {
           </span>
         </div>
         {error && <div className="notice notice-error">{error}</div>}
-        {filteredTemplates.length ? (
+        {loading ? (
+          <div className="empty-state">
+            <p>Loading templates...</p>
+          </div>
+        ) : filteredTemplates.length ? (
           <div className="template-grid">
             {filteredTemplates.map((template) => (
               <TemplateCard
