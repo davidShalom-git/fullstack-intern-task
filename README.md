@@ -2,12 +2,10 @@
 
 A small full-stack template gallery built for the Gnxtace Technologies Software Engineering Intern assessment. People can create an account, browse and search website templates, save favorites, and manage their shortlist.
 
-> Before submitting, replace the name and contact placeholders below with your own details.
-
 ## Candidate
 
-- Name: **[Your name]**
-- Contact: **[Your email or preferred contact]**
+- Name: **David Shalom M**
+- Contact: **7539943015 · davidshalomswe@gmail.com**
 
 ## Features
 
