@@ -7,6 +7,7 @@ Forma is a full-stack template store built for the Gnxtace Technologies Software
 - **Frontend:** [forma-template-store-client.vercel.app](https://forma-template-store-client.vercel.app/)
 - **API health:** [forma-template-store-api.vercel.app/api/health](https://forma-template-store-api.vercel.app/api/health)
 - **Source code:** [github.com/davidShalom-git/fullstack-intern-task](https://github.com/davidShalom-git/fullstack-intern-task)
+- **Assessment write-up:** [Software Engineering Intern Assessment](output/pdf/Software-Engineering-Intern-Assessment-David-Shalom-M.pdf)
 - **Candidate:** David Shalom M · davidshalomswe@gmail.com · 7539943015
 
 The React frontend and Express API are deployed as separate Vercel projects. The hosted API connects to MongoDB Atlas. The first successful database connection seeds six sample templates when the collection is empty.
